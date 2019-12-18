@@ -7,7 +7,7 @@ public class BeanDefinition {
     private String beanClassName;
 
     private Class beanClass;
-    private PropertyValues propertyValues;
+    private PropertyValues propertyValues = new PropertyValues();
 
     public Class getBeanClass() {
         return beanClass;
