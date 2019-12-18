@@ -4,7 +4,10 @@ package lizc.tinyioc;
 public class BeanDefinition {
 
     private Object bean;
+    private String beanClassName;
+
     private Class beanClass;
+    private PropertyValues propertyValues;
 
     public Class getBeanClass() {
         return beanClass;
@@ -29,7 +32,6 @@ public class BeanDefinition {
         }
     }
 
-    private String beanClassName;
     public BeanDefinition()
     {
 
@@ -42,5 +44,13 @@ public class BeanDefinition {
     public Object getBean()
     {
         return bean;
+    }
+
+    public PropertyValues getPropertyValues() {
+        return propertyValues;
+    }
+
+    public void setPropertyValues(PropertyValues propertyValues) {
+        this.propertyValues = propertyValues;
     }
 }

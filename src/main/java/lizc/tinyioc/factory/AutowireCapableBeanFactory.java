@@ -1,22 +1,31 @@
 package lizc.tinyioc.factory;
 
 import lizc.tinyioc.BeanDefinition;
+import lizc.tinyioc.PropertyValue;
+
+import java.lang.reflect.Field;
 
 public class AutowireCapableBeanFactory extends AbstractBeanFactory {
-    public Object doCreateBean(BeanDefinition beanDefinition)
+    protected Object doCreateBean(BeanDefinition beanDefinition)throws Exception
     {
-        try {
-            Object bean=beanDefinition.getBeanClass().newInstance();
-            return bean;
-        }
-        catch (InstantiationException e)
+        Object bean=createBeanInstance(beanDefinition);
+        applyPropertyValues(bean,beanDefinition);
+        return bean;
+    }
+
+
+    protected Object createBeanInstance(BeanDefinition beanDefinition)throws Exception
+    {
+        return beanDefinition.getBeanClass().newInstance();
+    }
+
+    protected void applyPropertyValues(Object bean,BeanDefinition mbd) throws Exception
+    {
+        for (PropertyValue propertyValue:mbd.getPropertyValues().getPropertyValueList())
         {
-            e.printStackTrace();
+            Field declaredField=bean.getClass().getDeclaredField(propertyValue.getName());
+            declaredField.setAccessible(true);
+            declaredField.set(bean,propertyValue.getValue());
         }
-        catch (IllegalAccessException e)
-        {
-            e.printStackTrace();
-        }
-        return null;
     }
 }
