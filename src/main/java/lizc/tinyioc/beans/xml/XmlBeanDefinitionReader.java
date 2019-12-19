@@ -1,10 +1,10 @@
-package lizc.tinyioc.xml;
+package lizc.tinyioc.beans.xml;
 
-import lizc.tinyioc.AbstractBeanDefinitionReader;
-import lizc.tinyioc.BeanDefinition;
+import lizc.tinyioc.beans.AbstractBeanDefinitionReader;
+import lizc.tinyioc.beans.BeanDefinition;
 import lizc.tinyioc.BeanReference;
-import lizc.tinyioc.PropertyValue;
-import lizc.tinyioc.io.ResourceLoader;
+import lizc.tinyioc.beans.PropertyValue;
+import lizc.tinyioc.beans.io.ResourceLoader;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

@@ -1,9 +1,8 @@
-package lizc.tinyioc.io;
+package lizc.tinyioc.beans.io;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.io.IOException;
 import java.io.InputStream;
 
 public class ResourceLoaderTest {

@@ -1,10 +1,10 @@
 package lizc.tinyioc;
 
-import lizc.tinyioc.factory.AbstractBeanFactory;
-import lizc.tinyioc.factory.AutowireCapableBeanFactory;
-import lizc.tinyioc.factory.BeanFactory;
-import lizc.tinyioc.io.ResourceLoader;
-import lizc.tinyioc.xml.XmlBeanDefinitionReader;
+import lizc.tinyioc.beans.BeanDefinition;
+import lizc.tinyioc.beans.factory.AbstractBeanFactory;
+import lizc.tinyioc.beans.factory.AutowireCapableBeanFactory;
+import lizc.tinyioc.beans.io.ResourceLoader;
+import lizc.tinyioc.beans.xml.XmlBeanDefinitionReader;
 import org.junit.Test;
 
 import java.util.Map;

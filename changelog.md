@@ -12,3 +12,5 @@
 ## 4.step4-读取xml配置来初始化bean
 
 ## 5.为bean注入bean
+
+## 6.ApplicationContext

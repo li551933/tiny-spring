@@ -1,4 +1,4 @@
-package lizc.tinyioc;
+package lizc.tinyioc.beans;
 
 
 public class BeanDefinition {

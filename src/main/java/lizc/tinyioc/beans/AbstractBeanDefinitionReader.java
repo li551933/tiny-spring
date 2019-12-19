@@ -1,6 +1,6 @@
-package lizc.tinyioc;
+package lizc.tinyioc.beans;
 
-import lizc.tinyioc.io.ResourceLoader;
+import lizc.tinyioc.beans.io.ResourceLoader;
 
 import java.util.HashMap;
 import java.util.Map;

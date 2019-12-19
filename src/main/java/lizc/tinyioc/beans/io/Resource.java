@@ -1,4 +1,4 @@
-package lizc.tinyioc.io;
+package lizc.tinyioc.beans.io;
 
 import java.io.InputStream;
 

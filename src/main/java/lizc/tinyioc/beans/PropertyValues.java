@@ -1,4 +1,4 @@
-package lizc.tinyioc;
+package lizc.tinyioc.beans;
 
 import java.util.ArrayList;
 import java.util.List;

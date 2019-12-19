@@ -1,4 +1,4 @@
-package lizc.tinyioc;
+package lizc.tinyioc.beans;
 
 public class PropertyValue {
     private final String name;

@@ -1,8 +1,8 @@
-package lizc.tinyioc.factory;
+package lizc.tinyioc.beans.factory;
 
-import lizc.tinyioc.BeanDefinition;
+import lizc.tinyioc.beans.BeanDefinition;
 import lizc.tinyioc.BeanReference;
-import lizc.tinyioc.PropertyValue;
+import lizc.tinyioc.beans.PropertyValue;
 
 import java.lang.reflect.Field;
 

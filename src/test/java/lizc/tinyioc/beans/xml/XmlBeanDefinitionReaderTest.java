@@ -1,7 +1,7 @@
-package lizc.tinyioc.xml;
+package lizc.tinyioc.beans.xml;
 
-import lizc.tinyioc.BeanDefinition;
-import lizc.tinyioc.io.ResourceLoader;
+import lizc.tinyioc.beans.BeanDefinition;
+import lizc.tinyioc.beans.io.ResourceLoader;
 import org.junit.Assert;
 import org.junit.Test;
 
